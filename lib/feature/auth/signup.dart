@@ -35,7 +35,7 @@ class _signupScreenState extends State<signupScreen> {
               const SizedBox(height: 8),
 
               const Text(
-                "Get started",
+                "Sign Up",
                 style: TextStyle(color: Colors.grey, fontSize: 16),
               ),
 

@@ -1,17 +1,78 @@
-# sport_shop
+# 🏀 Sport Shop App
 
-A new Flutter project.
+A modern and minimal Flutter application for shopping sports products. The app provides a clean user experience with an elegant UI, allowing users to browse products, view details, and manage their shopping cart with ease.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- 🏠 Clean Home Screen
+- 🔍 Search Products
+- 🛍 Browse Categories
+- ❤️ Favorite Products
+- 📦 Product Details
+- 🛒 Shopping Cart
+- 👤 User Profile
+- 📱 Responsive UI
+- 🎨 Modern & Minimal Design
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 UI Design
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+This project UI was inspired by a modern Figma design.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Design Link:**
+https://www.figma.com/make/ae9G7Lsrk1w37c7idz7tGy/Minimal-Sport-Shop-App?t=xQuC6y834dl7Mlvc-20&fullscreen=1
+
+---
+
+## 🛠 Tech Stack
+
+- Flutter
+- Dart
+- Material Design
+
+---
+
+## 📂 Project Structure
+
+```
+lib/
+│
+├── core/
+│   ├── api/
+│   ├── widgets/
+│   └── theme/
+│
+├── feature/
+│   ├── home/
+│   ├── shop/
+│   ├── profile/
+│   ├── settings/
+│   └── auth/
+│
+│
+└── main.dart
+```
+
+---
+
+## 📱 Screens
+
+- Splash Screen
+- Login
+- Register
+- Home
+- Categories
+- Product Details
+- Favorites
+- Cart
+- Profile
+- Settings
+
+---
+
+
+## 👨‍💻 Developed By
+
+**Tarek Nabil**
+
+Flutter Developer
+

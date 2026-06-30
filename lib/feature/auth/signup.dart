@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:sport_shop/core/theme/app_color.dart';
-import 'package:sport_shop/core/widgets/bottom_bar.dart';
 import 'package:sport_shop/core/widgets/custom_button.dart';
 import 'package:sport_shop/core/widgets/logo.dart';
 import 'package:sport_shop/core/widgets/text_field.dart';
-import 'package:sport_shop/feature/auth/signup.dart';
+import 'package:sport_shop/feature/home/home.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class signupScreen extends StatefulWidget {
+  const signupScreen({super.key});
 
+  @override
+  State<signupScreen> createState() => _signupScreenState();
+}
+
+class _signupScreenState extends State<signupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,11 +35,14 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 8),
 
               const Text(
-                "Welcome back! Please login.",
+                "Get started",
                 style: TextStyle(color: Colors.grey, fontSize: 16),
               ),
 
               const SizedBox(height: 35),
+
+              CustomTextField(hintText: "Full Name", icon: Icons.person),
+              const SizedBox(height: 18),
 
               CustomTextField(
                 hintText: "ُEmail Address",
@@ -48,53 +55,24 @@ class LoginScreen extends StatelessWidget {
                 icon: Icons.lock_outline,
                 obscureText: true,
               ),
-              Align(
-                alignment: Alignment.centerRight,
-                child: TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    "Forgot Password?",
-                    style: TextStyle(color: Color(0xff2962FF)),
-                  ),
-                ),
+              const SizedBox(height: 18),
+
+              const CustomTextField(
+                hintText: "Confirm Password",
+                icon: Icons.security,
+                obscureText: true,
               ),
 
               const SizedBox(height: 30),
 
               CustomButton(
-                text: "Login",
+                text: "sign up",
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => BottomBar()),
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
                   );
                 },
-              ),
-
-              const SizedBox(height: 20),
-
-              SizedBox(
-                width: double.infinity,
-                height: 55,
-                child: OutlinedButton(
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: const Color(0xff2962FF),
-                    side: const BorderSide(color: Color(0xff2962FF)),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => signupScreen()),
-                    );
-                  },
-                  child: const Text(
-                    "Create Account",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                  ),
-                ),
               ),
             ],
           ),

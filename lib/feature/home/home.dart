@@ -138,10 +138,10 @@ Widget categoryItem({
     child: Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: BoxDecoration(
-        color: isSelected ? const Color(0xff2563EB) : const Color(0xffF3F4F6),
+        color: isSelected ? const Color(0xff2563EB) : Color(0xffF3F4F6),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
-          color: isSelected ? Colors.transparent : const Color(0xffE5E7EB),
+          color: isSelected ? Colors.transparent : Color(0xffE5E7EB),
         ),
       ),
       child: Text(
@@ -185,7 +185,7 @@ Widget productCard({
         Stack(
           children: [
             ClipRRect(
-              // borderRadius: BorderRadius.circular(15),
+             
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(0),
                 bottomRight: Radius.circular(0),
@@ -195,7 +195,7 @@ Widget productCard({
 
               child: Image.asset(
                 image,
-                height: 140,
+                height: 170,
                 width: double.infinity,
                 fit: BoxFit.cover,
               ),

@@ -29,7 +29,7 @@ class _BottomBarState extends State<BottomBar> {
           this._pageController.animateToPage(
             index,
             duration: Duration(microseconds: 500),
-            curve: Curves.easeIn,
+            curve: Curves.easeInOut,
           ),
         },
         selectedItemColor: Colors.purple,
